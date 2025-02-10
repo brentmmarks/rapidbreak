@@ -10,5 +10,5 @@ jobs:
     steps:
       - checkout
       - run: pwd && ls
-      - run: sudo npm install
+      - run: npm install
       - run: node index.js
