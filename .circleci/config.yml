@@ -9,5 +9,6 @@ jobs:
     resource_class: semanticallynull/container-chaos
     steps:
       - checkout
+      - run: pwd && ls
       - run: npm install
       - run: node index.js
