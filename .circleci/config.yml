@@ -8,5 +8,4 @@ jobs:
     machine: true
     resource_class: semanticallynull/container-chaos
     steps:
-      - run: uname -a
-      - run: hostname -f
+      - dockerrun: echo 'foo'
