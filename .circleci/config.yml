@@ -8,4 +8,5 @@ jobs:
     machine: true
     resource_class: semanticallynull/container-chaos
     steps:
-      - run: echo 'foo'
+      - run: npm install
+      - run: node index.js
