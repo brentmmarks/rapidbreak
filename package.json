@@ -1,0 +1,22 @@
+{
+  "name": "rapidbreak",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemanticallyNull/rapidbreak.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemanticallyNull/rapidbreak/issues"
+  },
+  "homepage": "https://github.com/SemanticallyNull/rapidbreak#readme",
+  "description": "",
+  "dependencies": {
+    "left-pad": "^1.3.0"
+  }
+}
