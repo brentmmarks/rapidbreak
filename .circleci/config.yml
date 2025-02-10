@@ -8,4 +8,4 @@ jobs:
     machine: true
     resource_class: semanticallynull/container-chaos
     steps:
-      - dockerrun: echo 'foo'
+      - run: echo 'foo'
