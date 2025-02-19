@@ -4,15 +4,13 @@ workflows:
     jobs:
       - runner-test
 
-runner:
-  cleanup_working_directory: true
-
 jobs:
   runner-test:
     machine: true
     resource_class: brentmmarks/docker-runner
     steps:
       - checkout
+      - run: rm -rf Dockerfile
       - run: pwd && ls
       - run: npm install
       - run: node index.js
