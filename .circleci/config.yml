@@ -6,7 +6,7 @@ workflows:
 
 runner:
   ssh:
-    advertise_addr: HOSTNAME:54782
+    advertise_addr: brent-katie-docker-test-runner:54782
 
 jobs:
   runner-test:
