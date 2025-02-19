@@ -3,6 +3,10 @@ workflows:
   testing:
     jobs:
       - runner-test
+
+runner:
+  cleanup_working_directory: true
+
 jobs:
   runner-test:
     machine: true
