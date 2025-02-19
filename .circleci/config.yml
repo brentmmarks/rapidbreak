@@ -10,6 +10,5 @@ jobs:
     resource_class: brentmmarks/docker-runner
     steps:
       - checkout
-      - run: pwd && ls
       - run: npm install
       - run: node index.js
