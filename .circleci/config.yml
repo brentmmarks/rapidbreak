@@ -4,6 +4,10 @@ workflows:
     jobs:
       - runner-test
 
+runner:
+  ssh:
+    advertise_addr: HOSTNAME:54782
+
 jobs:
   runner-test:
     machine: true
