@@ -3,12 +3,18 @@ workflows:
   testing:
     jobs:
       - runner-test
-
-runner:
-  ssh:
-    advertise_addr: brent-katie-docker-test-runner:54782
+      - machine-test
 
 jobs:
+  machine-test:
+    machine: true
+    resource_class: large
+    steps:
+      - checkout
+      - run: ls -la
+      - run: |
+          npm install
+          node index.js
   runner-test:
     machine: true
     resource_class: brentmmarks/docker-runner
