@@ -12,9 +12,8 @@ jobs:
     steps:
       - checkout
       - run: ls -la
-      - run: |
-          npm install
-          node index.js
+      - run: npm install
+      - run: node index.js
   runner-test:
     machine: true
     resource_class: brentmmarks/docker-runner
