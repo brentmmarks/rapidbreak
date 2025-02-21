@@ -5,6 +5,11 @@ workflows:
       - runner-test
       - machine-test
 
+parameters:
+  debug:
+    type: boolean
+    default: false
+
 jobs:
   machine-test:
     machine: true
@@ -16,6 +21,8 @@ jobs:
   runner-test:
     machine: true
     resource_class: brentmmarks/docker-runner
+    environment:
+      - DEBUG_DOCKER_OUTPUT: << pipeline.parameters.debug >>
     steps:
       - checkout
       - run: npm install
